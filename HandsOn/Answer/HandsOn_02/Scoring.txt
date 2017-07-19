@@ -1,0 +1,17 @@
+includeFile = Visu.txt
+
+
+# MyScoring #
+
+s:Sc/MyScorer/Quantity                   = "EnergyDeposit"
+#s:Sc/MYScorer/Quantity                  = "DoseToWater"
+#s:Sc/MyScorer/Quantity                  = "Fluence"
+#s:Sc/MYScorer/Quantity                  = "ProtonLET"
+s:Sc/MyScorer/Component                  = "WaterPhantom"
+#b:Sc/DoseAtPhantom/OutputToConsole      = "TRUE"
+s:Sc/MyScorer/IfOutputFileAlreadyExists = "Overwrite"
+s:Sc/MyScorer/OutputType                           = "csv"
+i:Sc/MyScorer/XBins                                = 1
+i:Sc/MyScorer/YBins                                = 300
+i:Sc/MyScorer/ZBins                                = 300
+s:Sc/MYScorer/OutputFile                           = "./Python_Dose_Reading/Output"

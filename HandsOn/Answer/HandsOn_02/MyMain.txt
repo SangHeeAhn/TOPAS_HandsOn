@@ -1,0 +1,4 @@
+includeFile = Beamparameter.txt 
+
+#b:Ts/PauseBeforeQuit = "True"
+#b:Ts/PauseBeforeSequence = "True"

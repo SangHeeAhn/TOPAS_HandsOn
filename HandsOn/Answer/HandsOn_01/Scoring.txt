@@ -1,0 +1,15 @@
+includeFile = Visu.txt
+
+
+# MyScoring #
+
+s:Sc/MyScoring/Quantity                   = "PhaseSpace"
+b:Sc/MyScoring/OutputToConsole            = "True"
+s:Sc/MyScoring/Surface                    = "Flat_Detector/XMinusSurface"
+s:Sc/MyScoring/OutputType                 = "ASCII" # ASCII, Binary, Limited or ROOT
+s:Sc/MyScoring/OutputFile                 = "./Python_Hist_Reading/Output"
+s:Sc/MyScoring/Component 		  = "Flat_Detector"
+i:Sc/MyScoring/OutputBufferSize           = 10000
+#sv:Sc/MyScoring/OnlyIncludeParticlesNamed = 1 "gamma"
+s:Sc/MyScoring/IfOutputFileAlreadyExists  = "Overwrite"
+

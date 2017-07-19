@@ -1,0 +1,30 @@
+includeFile = Scoring.txt 
+
+# HandsOn 02 #
+# Scoring Tutorial #
+
+# World #
+s:Ge/World/Material  = "Vacuum"
+d:Ge/World/HLX       = 1.0 m
+d:Ge/World/HLY       = 1.0 m
+d:Ge/World/HLZ       = 1.0 m
+b:Ge/World/Invisible = "True"
+
+
+# WaterPhantom #
+s:Ge/WaterPhantom/Type     = "TsBox"
+s:Ge/WaterPhantom/Parent   = "World"
+s:Ge/WaterPhantom/Material = "G4_WATER"
+d:Ge/WaterPhantom/HLX      = 15 cm
+d:Ge/WaterPhantom/HLY      = 15 cm
+d:Ge/WaterPhantom/HLZ      = 15 cm
+d:Ge/WaterPhantom/TransX   = 0. cm
+d:Ge/WaterPhantom/TransY   = 0. cm
+d:Ge/WaterPhantom/TransZ   = 0. cm
+s:Ge/WaterPhantom/Color    = "blue"
+i:Ge/WaterPhantom/XBins    = 1    
+i:Ge/WaterPhantom/YBins    = 1
+i:Ge/WaterPhantom/ZBins    = 1
+s:Ge/WaterPhantom/DrawingStyle = "Wireframe"
+
+

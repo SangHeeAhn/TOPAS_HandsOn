@@ -1,0 +1,44 @@
+includeFile = Geometry.txt 
+
+
+i:Ts/Seed = 50
+i:Ts/NumberOfThreads = 8
+
+# Beam Parameter #
+s:Ge/MyBeamGroup/Parent = "World"
+s:Ge/MyBeamGroup/Type   = "Group"
+d:Ge/MyBeamGroup/TransX = 0. cm
+d:Ge/MyBeamGroup/TransY = 0. cm
+d:Ge/MyBeamGroup/TransZ = 10. cm
+d:Ge/MyBeamGroup/RotX   = 0. deg
+d:Ge/MyBeamGroup/RotY   = 180. deg
+d:Ge/MyBeamGroup/RotZ   = 0. deg
+
+
+s:So/MyBeam/Type = "Beam" # Beam, Isotropic, Emittance or PhaseSpace
+s:So/MyBeam/Component = "MyBeamGroup"
+s:So/MyBeam/BeamParticle = "proton"
+d:So/MyBeam/BeamEnergy = 80 MeV
+u:So/MyBeam/BeamEnergySpread = 0.757504
+s:So/MyBeam/BeamPositionDistribution = "Gaussian" # Flat or Gaussian
+s:So/MyBeam/BeamPositionCutoffShape = "Ellipse" # Point, Ellipse, Rectangle or Isotropic
+d:So/MyBeam/BeamPositionCutoffX = 0.1 cm
+d:So/MyBeam/BeamPositionCutoffY = 0.1 cm
+d:So/MyBeam/BeamPositionSpreadX = 0.1 cm
+d:So/MyBeam/BeamPositionSpreadY = 0.1 cm
+s:So/MyBeam/BeamAngularDistribution = "Gaussian" # Flat or Gaussian
+d:So/MyBeam/BeamAngularCutoffX = 90. deg
+d:So/MyBeam/BeamAngularCutoffY = 90. deg
+d:So/MyBeam/BeamAngularSpreadX = 0.0032 rad
+d:So/MyBeam/BeamAngularSpreadY = 0.0032 rad
+i:So/MyBeam/NumberOfHistoriesInRun = 10000
+i:Ts/ShowHistoryCountAtInterval = 10000
+
+
+
+# My Physics List #
+s:Ph/ListName = "MyPhysics"
+b:Ph/ListProcesses = "False" # Set true to dump list of active physics processes to console
+s:Ph/MyPhysics/Type= "Geant4_Modular"
+sv:Ph/MyPhysics/Modules = 6 "g4em-standard_opt4" "g4h-phy_QGSP_BIC_HP" "g4decay" "g4ion-binarycascade" "g4h-elastic_HP" "g4stopping"
+

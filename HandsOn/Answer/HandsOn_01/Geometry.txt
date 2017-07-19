@@ -1,0 +1,51 @@
+includeFile = Scoring.txt 
+
+# HandsOn 01 #
+# Scoring Tutorial #
+
+# World #
+s:Ge/World/Material  = "Vacuum"
+d:Ge/World/HLX       = 1.0 m
+d:Ge/World/HLY       = 1.0 m
+d:Ge/World/HLZ       = 1.0 m
+b:Ge/World/Invisible = "True"
+
+
+# WaterCylinder #
+s:Ge/WaterCylinder/Parent="World"
+s:Ge/WaterCylinder/Type="TsCylinder"
+s:Ge/WaterCylinder/Material="G4_WATER"
+d:Ge/WaterCylinder/RMin=0.0 cm
+d:Ge/WaterCylinder/RMax=1.5 cm  		
+d:Ge/WaterCylinder/HL=3.0 cm
+d:Ge/WaterCylinder/SPhi=0. deg
+d:Ge/WaterCylinder/DPhi=360. deg
+d:Ge/WaterCylinder/TransX=0. cm
+d:Ge/WaterCylinder/TransY=0. cm
+d:Ge/WaterCylinder/TransZ=0. cm
+d:Ge/WaterCylinder/RotX=0. deg
+d:Ge/WaterCylinder/RotY=0. deg
+d:Ge/WaterCylinder/RotZ=0. deg
+i:Ge/WaterCylinder/RBins    = 1
+i:Ge/WaterCylinder/PhiBins  = 1
+i:Ge/WaterCylinder/ZBins    = 1
+s:Ge/WaterCylinder/Color = "blue"
+
+
+# Flat Detector #
+s:Ge/Flat_Detector/Type     = "TsBox"
+s:Ge/Flat_Detector/Parent   = "World"
+s:Ge/Flat_Detector/Material = "G4_AIR"
+d:Ge/Flat_Detector/HLX      = 0.05 cm
+d:Ge/Flat_Detector/HLY      = 3.0 cm
+d:Ge/Flat_Detector/HLZ      = 3.0 cm
+d:Ge/Flat_Detector/TransX   = 3. cm
+d:Ge/Flat_Detector/TransY   = 0. cm
+d:Ge/Flat_Detector/TransZ   = 0. cm
+s:Ge/Flat_Detector/Color    = "red"
+i:Ge/Flat_Detector/XBins    = 1
+i:Ge/Flat_Detector/YBins    = 1
+i:Ge/Flat_Detector/ZBins    = 1
+s:Ge/Flat_Detector/DrawingStyle = "Wireframe"
+
+

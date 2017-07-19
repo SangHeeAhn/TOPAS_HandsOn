@@ -1,8 +1,8 @@
-# TOPAS_HandsOn
+# TOPAS_HandsOn 2017.07.20
 
 TOPAS Basic Course 
-Version 01 by SangHee AHn 
+by SangHee AHn 
 
 Enjoy TOPAS time !!
 
-Thank you 
+Thank you ~~
